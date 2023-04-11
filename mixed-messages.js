@@ -1,5 +1,4 @@
 //First part of the message - lifeSphere
-//const lifeSphere =  ['finances', 'family', 'career', 'love life'];
 
 function lifeSphere(){
     let sphere = Math.floor(Math.random()*4)
@@ -19,7 +18,6 @@ function lifeSphere(){
     }
 }
 
-console.log(lifeSphere());
 
 //Second part of the message - Inspirational Quote
 
@@ -44,7 +42,6 @@ function inspirationalQuote(){
             break;
     }
 }
-console.log(inspirationalQuote())
 
 //Third part of the meessage - advice
 
@@ -52,17 +49,23 @@ function advice(){
     let adv = Math.floor(Math.random()*4)
     switch(adv){
         case 0:
-            return 'drop everything and do it!';
+            return 'first take a break and then evaluate all the options.';
             break;
         case 1:
-            return 'in this case ask your best friend to help';
+            return 'ask your best friend to help.';
             break;
         case 2: 
-            return 'keep it a secret for now';
+            return 'keep it a secret for now and act just by yourself.';
             break;
         case 3:
-            return 'not leave aything to a chance!'
+            return 'compare opinions of your three best friends.'
     }
 }
 
-console.log(advice())
+
+
+function allWisdomTogether(){
+    //console.log(`This relates to the problem you are dealing with in your *${lifeSphere()}*, the quote for you to consider is:\n ${inspirationalQuote()}\n To resolve your problem you should ${advice()}`)
+    return `This relates to the problem you are dealing with in your *${lifeSphere()}*, the quote for you to consider is:\n\n ${inspirationalQuote()}\n\n To resolve your problem you should ${advice()}`
+}
+console.log(allWisdomTogether())
