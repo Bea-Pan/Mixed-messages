@@ -27,5 +27,5 @@ function advice(){
 
 function allWisdomTogether(){
     return `This relates to the problem you are dealing with in your *${lifeSphere()}*, the quote for you to consider is:\n\n ${inspirationalQuote()}\n\n To resolve your problem you should ${advice()}`
-}``
+}
 console.log(allWisdomTogether())
