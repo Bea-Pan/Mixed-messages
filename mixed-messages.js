@@ -43,6 +43,26 @@ function inspirationalQuote(){
             return '"Ever tried. Ever failed. No matter. Try again. Fail again. Fail better"-Samuel Beckett';
             break;
     }
-
 }
 console.log(inspirationalQuote())
+
+//Third part of the meessage - advice
+
+function advice(){
+    let adv = Math.floor(Math.random()*4)
+    switch(adv){
+        case 0:
+            return 'drop everything and do it!';
+            break;
+        case 1:
+            return 'in this case ask your best friend to help';
+            break;
+        case 2: 
+            return 'keep it a secret for now';
+            break;
+        case 3:
+            return 'not leave aything to a chance!'
+    }
+}
+
+console.log(advice())
