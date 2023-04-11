@@ -24,9 +24,8 @@ function advice(){
     let random = randomOutput(adv);
     return random;
 }
-``
+
 function allWisdomTogether(){
-    //console.log(`This relates to the problem you are dealing with in your *${lifeSphere()}*, the quote for you to consider is:\n ${inspirationalQuote()}\n To resolve your problem you should ${advice()}`)
     return `This relates to the problem you are dealing with in your *${lifeSphere()}*, the quote for you to consider is:\n\n ${inspirationalQuote()}\n\n To resolve your problem you should ${advice()}`
-}
+}``
 console.log(allWisdomTogether())
